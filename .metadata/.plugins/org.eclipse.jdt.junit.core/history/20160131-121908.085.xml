@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Combination_sum" project="Leetcode_Array" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="combination.Combination_sum" incomplete="true">
-    <testcase name="test" classname="combination.Combination_sum" incomplete="true"/>
-  </testsuite>
-</testrun>
