@@ -1,0 +1,60 @@
+package rotate;
+/**
+ * Given a list, rotate the list to the right by k places, where k is non-negative.
+
+	For example:
+	Given 1->2->3->4->5->NULL and k = 2,
+	return 4->5->1->2->3->NULL.
+ * @author Haolin
+ *
+ */
+public class RotateList {
+	
+	public class ListNode {
+		int val;
+		ListNode next;
+		ListNode(int x) { val = x; }
+	}
+	
+	private int getLength(ListNode header){
+		int len=1;
+		while(header.next!=null){
+			header=header.next;
+			len++;
+		}
+		return len;
+	}
+	
+	public ListNode solution(ListNode head, int k){
+//		It is to solve two corner cases:
+//		1) order is greater than arr. length
+//		2) order is negative
+		 if (head == null) {
+	            return null;
+	        }
+	        
+	        int length = getLength(head);
+	        k = k % length;
+	        
+	        ListNode dummy = new ListNode(0);
+	        dummy.next = head;
+	        head = dummy;
+	        
+	        ListNode tail = dummy;
+	        for (int i = 0; i < n; i++) {
+	            head = head.next;
+	        }
+	        
+	        while (head.next != null) {
+	            tail = tail.next;
+	            head = head.next;
+	        }
+	        
+	        head.next = dummy.next;
+	        dummy.next = tail.next;
+	        tail.next = null;
+	        return dummy.next;
+		
+		
+	}
+}

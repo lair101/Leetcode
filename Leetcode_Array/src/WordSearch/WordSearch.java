@@ -20,7 +20,6 @@ public class WordSearch {
 		
 	}
 	
-	
 	public static boolean dfs(char[][] board, String word, boolean[][] visits, int index, int r, int c){
 		if(index==word.length()) return true;
 		if(r<0||c<0||r>=board.length||c>=board[0].length) return false;
