@@ -13,7 +13,7 @@ import org.junit.Test;
 	
 	Note:
 	All numbers (including target) will be positive integers.
-	Elements in a combination (a1, a2, ¡­ , ak) must be in non-descending order. (ie, a1 ¡Ü a2 ¡Ü ¡­ ¡Ü ak).
+	Elements in a combination (a1, a2, ï¿½ï¿½ , ak) must be in non-descending order. (ie, a1 ï¿½ï¿½ a2 ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ak).
 	The solution set must not contain duplicate combinations.
 	For example, given candidate set 2,3,6,7 and target 7, 
 	A solution set is: 
@@ -34,7 +34,7 @@ public class Combination_sum {
 	    public void dfs(int[] nums, int target, int index, List<Integer> res, List<List<Integer>> result){
 	        if(target<0) {return;}
 	        if(target==0) {
-	        	result.add(new ArrayList<Integer>(res)); // Ò»¶¨ÒªnewÒ»¸öÐÂµÄitem list ÒòÎªÈç¹ûµÝ¹éÇå³ýÊ±£¬»á½«Ô­ÓÐµÄresÇå¿Õ¡£Ö±½Óadd,Ö»ÊÇ¼ÓÒ»¸öpointer£¬µÈÇå¿Õºó,resultÀïÒ²»¹ÊÇ¿ÕµÄ¡£
+	        	result.add(new ArrayList<Integer>(res)); // Ò»ï¿½ï¿½ÒªnewÒ»ï¿½ï¿½ï¿½Âµï¿½item list ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½á½«Ô­ï¿½Ðµï¿½resï¿½ï¿½Õ¡ï¿½Ö±ï¿½ï¿½add,Ö»ï¿½Ç¼ï¿½Ò»ï¿½ï¿½pointerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õºï¿½,resultï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ç¿ÕµÄ¡ï¿½
 	        	return;
 	        }
 	       
